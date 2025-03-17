@@ -1,4 +1,5 @@
 import string
+from typing import Any
 from typing import Iterable
 from typing import Optional
 from typing import Type
@@ -439,5 +440,3 @@ class ValidateData(pydantic.BaseModel):
             </kml:Data>
         """
         return fastkml.data.Data(**self.__dict__)
-    
-
